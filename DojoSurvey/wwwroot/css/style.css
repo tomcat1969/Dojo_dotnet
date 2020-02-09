@@ -1,0 +1,15 @@
+h2 {
+    color: blue;
+}
+.wraper{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+.info{
+    border: 1px solid black;
+    widows: 390px;
+    height: 390px;
+    
+}
