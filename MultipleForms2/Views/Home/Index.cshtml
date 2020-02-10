@@ -1,0 +1,30 @@
+﻿@model IndexViewModel
+<h1>Add a User</h1>
+<form action="/create/user" method="post">
+    <div class="form-group">
+        <label asp-for="NewUser.Username"></label>
+        <input asp-for="NewUser.Username">
+        <span asp-validation-for="NewUser.Username"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewUser.Age"></label>
+        <input asp-for="NewUser.Age">
+        <span asp-validation-for="NewUser.Age"></span>
+    </div>
+    <input type="submit" value="Add User">
+</form>
+<h1>Add a Product</h1>
+<form action="/create/product" method="post">
+    <div class="form-group">
+        <label asp-for="NewProduct.ProductName"></label>
+        <input asp-for="NewProduct.ProductName">
+        <span asp-validation-for="NewProduct.ProductName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewProduct.Price"></label>
+        <input asp-for="NewProduct.Price">
+        <span asp-validation-for="NewProduct.Price"></span>
+    </div>
+    <input type="submit" value="Add Product">
+</form>
+
