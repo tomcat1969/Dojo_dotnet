@@ -12071,23 +12071,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomca_000\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/linhuang/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\MvcDemo1.csproj",
+      "projectUniqueName": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/MvcDemo1.csproj",
       "projectName": "MvcDemo1",
-      "projectPath": "C:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\MvcDemo1.csproj",
-      "packagesPath": "C:\\Users\\tomca_000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\obj\\",
+      "projectPath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/MvcDemo1.csproj",
+      "packagesPath": "/Users/linhuang/.nuget/packages/",
+      "outputPath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\tomca_000\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/linhuang/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

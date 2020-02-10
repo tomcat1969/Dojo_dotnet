@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\MvcDemo1.csproj",
+  "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/MvcDemo1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,68 +2961,68 @@
   "RootNamespace": "MvcDemo1",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Home\\User.cshtml",
-      "TargetPath": "Views\\Home\\User.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/_ViewStart.cshtml",
+      "TargetPath": "Views/_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Home\\Names.cshtml",
-      "TargetPath": "Views\\Home\\Names.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views/Shared/_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Shared/Error.cshtml",
+      "TargetPath": "Views/Shared/Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Home\\Numbers.cshtml",
-      "TargetPath": "Views\\Home\\Numbers.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Home/Names.cshtml",
+      "TargetPath": "Views/Home/Names.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Home/User.cshtml",
+      "TargetPath": "Views/Home/User.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Home\\Message.cshtml",
-      "TargetPath": "Views\\Home\\Message.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Home/Numbers.cshtml",
+      "TargetPath": "Views/Home/Numbers.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views/Home/Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Home/Users.cshtml",
+      "TargetPath": "Views/Home/Users.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/_ViewImports.cshtml",
+      "TargetPath": "Views/_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Home/Message.cshtml",
+      "TargetPath": "Views/Home/Message.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tomca_000\\Desktop\\dotnet\\MvcDemo1\\Views\\Home\\Users.cshtml",
-      "TargetPath": "Views\\Home\\Users.cshtml",
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/MvcDemo1/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],

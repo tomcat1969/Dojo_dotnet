@@ -28,20 +28,20 @@ namespace MvcDemo1.Controllers
                 {
                 "Sally", "Billy", "Joey", "Moose"
                 };
-                return View(names);
+                return View("Names",names);
             }
 
          public IActionResult Message()
          {
              string msg = "this is a message !!";
              //ViewBag.msg = msg;
-             return View(msg);
+             return View("Message", msg);
          }    
 
         public IActionResult Numbers()
         {
             int[] numbers = new int[]{1,2,3,4,5,6};
-            return View(numbers);
+            return View("Numbers",numbers);
         }
 
         public IActionResult Users()
@@ -61,7 +61,7 @@ namespace MvcDemo1.Controllers
                 }
             };
 
-            return View(users);
+            return View("Users",users);
 
         }
 
@@ -72,7 +72,7 @@ namespace MvcDemo1.Controllers
                 FirstName = "Marry",
                 LastName = "Wood"
             };
-            return View(user);
+            return View("User",user);
 
         }
 
