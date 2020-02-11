@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+   <h1>Here are my Users!</h1>
+<ul>
+@foreach(var user in ViewBag.Users)
+{
+    <!-- Remember, these are Dictionaries - so you must use user["KeyName"] to access the values within -->
+    <li>@user["FirstName"] @user["LastName"]</li>
+}
+</ul>
+</div>
