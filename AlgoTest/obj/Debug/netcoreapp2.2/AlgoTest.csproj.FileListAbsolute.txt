@@ -1,0 +1,11 @@
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/bin/Debug/netcoreapp2.2/AlgoTest.deps.json
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/bin/Debug/netcoreapp2.2/AlgoTest.runtimeconfig.json
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/bin/Debug/netcoreapp2.2/AlgoTest.runtimeconfig.dev.json
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/bin/Debug/netcoreapp2.2/AlgoTest.dll
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/bin/Debug/netcoreapp2.2/AlgoTest.pdb
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/obj/Debug/netcoreapp2.2/AlgoTest.csprojAssemblyReference.cache
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/obj/Debug/netcoreapp2.2/AlgoTest.csproj.CoreCompileInputs.cache
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/obj/Debug/netcoreapp2.2/AlgoTest.AssemblyInfoInputs.cache
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/obj/Debug/netcoreapp2.2/AlgoTest.AssemblyInfo.cs
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/obj/Debug/netcoreapp2.2/AlgoTest.dll
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/AlgoTest/obj/Debug/netcoreapp2.2/AlgoTest.pdb
