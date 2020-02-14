@@ -10,7 +10,6 @@ namespace AlgoTest
 
             TreeNode node10 = new TreeNode(10);
             TreeNode node14 = new TreeNode(14);
-
             TreeNode node12 = new TreeNode(12);
             TreeNode node7 = new TreeNode(7);
             TreeNode node9 = new TreeNode(9);
@@ -26,7 +25,9 @@ namespace AlgoTest
 
             preOrder(node10);
             Console.WriteLine();
-           AddNode(node10,4);
+           //AddNode(node10,4);
+            // Remove(node10,5);
+
              preOrder(node10);
 
 
@@ -47,7 +48,7 @@ namespace AlgoTest
 
         private static void AddNode(TreeNode root, int val)
         {
-            if (root == null) return;
+            if (root == null) return ;
 
             TreeNode newNode = new TreeNode(val);
 
@@ -67,9 +68,42 @@ namespace AlgoTest
             }else{
                 AddNode(root.left,val);
             }
-
-           
             
+        }
+
+        private static void Remove(TreeNode root,int val) 
+        {
+            if(root == null) return ;
+
+            if(root.val == val) {
+                if(root.left == null && root.right == null)
+                {
+                    root = null;
+                }
+
+                if( root.right == null && root.left != null)
+                {
+                    root = root.left;
+                }
+                if(root.left == null && root.right != null)
+                {
+                    root = root.right;
+                }
+
+                if(root.left != null && root.right != null)
+                {
+                    root = root.left;
+                }
+
+            }else if (root.val < val) 
+            {
+                Remove(root.right,val);
+            }else{
+                Remove(root.left,val);
+            }
+
+
+
         }
 
 
