@@ -1,0 +1,29 @@
+@Model Dish;
+<h1>Edit @Model.Name</h1>
+<a href="/" >Home</a>
+<form action="/modify" method="post">
+    <input type="hidden" value="@Model.DishId" name="DishId"/>
+    <p>Chef's Name: <input type="text" name="Chef" value="@Model.Chef"/></p>
+    <p>Name of Dish: <input type="text" name="Name" value="@Model.Name"/></p>
+    <p># of Calories: <input type="text" name="Calories" value="@Model.Calories"/></p>
+    <p>Tastiness :
+        <select name="Tastiness" value="@Model.Tastiness">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select>
+    </p>
+    <p>
+        Description :
+    </p> 
+    <textarea name="Description" rows="4" cols="50">@Model.Description</textarea>
+    <p><button >Edit Dish</button></p>
+
+</form>
