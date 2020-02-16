@@ -1,0 +1,23 @@
+@model List<User>
+<h1>Login successfully!!!</h1>
+<h2>Hello, @ViewBag.FirstName</h2>
+<h3><a href="/logout">Log out</a></h3>
+
+
+<table class="table">
+    <tr>
+        <td>Fisrt Name</td>
+        <td>Last Name</td>
+        <td>Email Address</td>
+        <td>Create At</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.Email</td>
+            <td>@item.CreatedAt</td>
+        </tr>
+    }
+</table>
