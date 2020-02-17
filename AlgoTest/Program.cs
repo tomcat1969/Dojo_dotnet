@@ -28,13 +28,55 @@ namespace AlgoTest
            //AddNode(node10,4);
             // Remove(node10,5);
 
-             preOrder(node10);
+            Console.WriteLine("*******size is ****" + BSTsize(node10));
+             Console.WriteLine("*******size(v2) is ****" + BSTsize_v2(node10));
+
+            Console.WriteLine("$$$$$$$$ the height is $$$$$$$ " + BSThight(node10));
+
+             //preOrder(node10);
 
 
 
 
 
 
+        }
+
+
+        private static int BSThight(TreeNode root)
+        {
+            if(root == null) return 0;
+            int leftHeight = BSThight(root.left);
+            int rightHeight = BSThight(root.right);
+            return Math.Max(leftHeight,rightHeight) + 1;
+        }
+
+        private static int BSTsize_v2(TreeNode root) 
+        {
+            if (root == null) return 0;
+            int leftSize = BSTsize(root.left);
+            int rightSize = BSTsize(root.right);
+            return leftSize + rightSize + 1;
+        }
+
+        private static int BSTsize(TreeNode root)
+        {
+            int[] count = new int[1];
+            if(root == null) return 0;
+            
+            BSTsize_helper(root,count);
+           
+            return count[0];
+        }
+
+        private static void BSTsize_helper(TreeNode root,int[] count) 
+        {
+            if(root == null) return;
+            count[0]++;
+            BSTsize_helper(root.left,count);
+            BSTsize_helper(root.right,count);
+
+            
         }
         private  static void preOrder(TreeNode root) 
         {
