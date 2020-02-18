@@ -1,0 +1,25 @@
+<h1>Login </h1>
+
+@model LoginUser
+<form asp-action="DoLogin" asp-controller="Home" method="post">
+    
+
+    <p>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" value="admin@gmail.com">
+        <span asp-validation-for="Email"></span>
+    </p>
+    <p>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" value="1234567890">
+        <span asp-validation-for="Password"></span> 
+    </p>
+    
+   
+    <p><button>Login</button></p>
+
+    
+</form>
+<a href="/">Need to Register?</a>
+<p>admin@gmail.com</p>
+<p>1234567890</p>

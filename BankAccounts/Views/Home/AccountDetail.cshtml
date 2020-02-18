@@ -1,0 +1,23 @@
+
+@model Wrapper
+<h1>Welcome , @ViewBag.The_User.FirstName</h1>
+<h3>Current Balance @ViewBag.Balance</h3>
+<form asp-action="AddTransaction" asp-controller="Home" method="post">
+    <input type="hiden" asp-for="oneTrans.UserId" value="@ViewBag.The_User.UserId"/>
+    <p>Deposit / Withdraw <input asp-for="oneTrans.Amount"/> <button> Submit</button></p>
+</form>
+<table class="table">
+    <tr>
+        <td>Amount</td>
+        <td>Date</td>
+    </tr> 
+    @foreach (var t in Model.TransList)
+    {
+        <tr>
+            <td>@t.Amount</td>
+            <td>@t.CreatedAt</td>
+
+        </tr>
+    }
+
+</table>
