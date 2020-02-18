@@ -12,8 +12,10 @@ namespace ChefsNdishes.Models
         [Required]
          public string DishName {get;set;}
          [Required]
+         [Range(0,999999)]
          public int Calories {get;set;}
         [Required]
+        [Range(0,6)]
          public int Tastiness {get;set;}
 
          [Required]
@@ -31,4 +33,6 @@ namespace ChefsNdishes.Models
 
 
     }   
+
+    
 }

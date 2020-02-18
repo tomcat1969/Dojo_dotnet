@@ -18,6 +18,8 @@ namespace ChefsNdishes.Models
          [Required]
          public string LastName {get;set;}
          [Required]   
+         [FutureDate]
+         [Greater18]
          public DateTime BirthDate {get;set;}
 
          public int Age{get;set;}
@@ -31,4 +33,49 @@ namespace ChefsNdishes.Models
 
 
     }   
+
+
+    public class FutureDateAttribute : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            // You first may want to unbox "value" here and cast to to a DateTime variable!
+            DateTime convertedValue = Convert.ToDateTime(value);
+            DateTime now = DateTime.Now;
+
+            Console.WriteLine("****************"+ convertedValue);
+             Console.WriteLine("****************"+ now);
+
+            if(convertedValue >= now)
+                return new ValidationResult("birth day should be in the past!");
+                 
+            return ValidationResult.Success;
+
+
+        }
+    }
+
+     public class Greater18Attribute : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            // You first may want to unbox "value" here and cast to to a DateTime variable!
+            DateTime convertedValue = Convert.ToDateTime(value);
+            int age = howOld(convertedValue);
+
+            if(age < 18)
+                return new ValidationResult("Age should greater then 18 years old!");
+                 
+            return ValidationResult.Success;
+
+
+        }
+
+        private int howOld(DateTime birthDay)
+        {
+            long elapseTicks = DateTime.Now.Ticks - birthDay.Ticks;
+            TimeSpan elapsedSpan = new TimeSpan(elapseTicks);
+            return elapsedSpan.Days / 365;
+        }
+    }
 }

@@ -81,6 +81,9 @@ namespace ChefsNdishes.Controllers
                 dbContext.SaveChanges();
                 return RedirectToAction("Dishes");
             }else{
+                 List<Chef> allChefs = dbContext.Chefs.Include(c => c.CreatedDishes).ToList();
+                 ViewBag.AllChefs = allChefs;
+                
                 return View("NewDish");
             }
         }

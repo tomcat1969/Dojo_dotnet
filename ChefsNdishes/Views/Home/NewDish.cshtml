@@ -27,9 +27,9 @@
     <P><span asp-validation-for="ChefId" ></span></P>
     <p><select asp-for="ChefId">
              @foreach (var item in ViewBag.AllChefs)
-            {
-                <option value="@item.ChefId">@item.FirstName + @item.LastName</option>
-            }
+                {
+                    <option value="@item.ChefId">@item.FirstName  @item.LastName</option>
+                }
         </select>
     </p>
    
@@ -40,7 +40,7 @@
      <p> <span  asp-validation-for="Description"></span></p>
     <textarea asp-for="Description" rows="4" cols="50"></textarea>
 
-    <p></p>
+    
 
 
     <P><button>Add a new Dish</button></P>
