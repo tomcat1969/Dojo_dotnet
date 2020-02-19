@@ -1,0 +1,22 @@
+﻿
+<h1>@ViewBag.the_category.Name</h1>
+<h3>Products</h3>
+<ul>
+    @foreach (var a in ViewBag.the_category.Products)
+    {
+        <li>@a.Product.Name</li>
+    }
+</ul>
+
+<form asp-action="AddPforC" asp-controller="Home" method="post">
+    <p>Add Product:</p>
+    <input type="hidden" name="CategoryId" value="@ViewBag.the_category.CategoryId"/>
+    <select name="ProductId" >
+        @foreach (var item in ViewBag.the_products_excluded)
+        {
+            <option value="@item.ProductId">@item.Name</option>
+        }
+    </select>
+    <button> Add </button>
+
+</form>

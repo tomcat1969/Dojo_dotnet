@@ -1,0 +1,22 @@
+@model Wrapper
+<h1>@Model.oneProduct.Name</h1>
+<h3>Categories</h3>
+<ul>
+    @foreach (var item in Model.oneProduct.Categories)
+    {
+        <li>@item.Category.Name</li>
+    }
+</ul>
+
+<form asp-action="AddCforP" asp-controller="Home" method="post">
+    <p>Add Category:</p>
+    <input type="hidden" name="ProductId" value="@Model.oneProduct.ProductId"/>
+    <select name="CategoryId" >
+        @foreach (var item in Model.Categories)
+        {
+            <option value="@item.CategoryId">@item.Name</option>
+        }
+    </select>
+    <button> Add </button>
+
+</form>

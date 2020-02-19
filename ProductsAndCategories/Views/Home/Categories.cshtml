@@ -1,0 +1,17 @@
+<h1><a href="/products" >Produt</a> | Categories</h1>
+@model Wrapper
+<form asp-action="AddCategory" asp-controller="Home" method="post">
+    <h3> New Category</h3>
+    <p>Name <input asp-for="oneCategory.Name"/></p>
+    
+    <p><button>Create</button>></p>
+
+</form>
+
+<h1>Existing Categories</h1>
+<ul>
+    @foreach (var item in Model.Categories)
+    {
+        <li><a href="/category/@item.CategoryId">@item.Name</a></li>
+    }
+</ul>

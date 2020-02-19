@@ -1,0 +1,18 @@
+<h1>Produt | <a href="/categories" >Categories</a></h1>
+@model Wrapper
+<form asp-action="AddProduct" asp-controller="Home" method="post">
+    <h3> New Product</h3>
+    <p>Name <input asp-for="oneProduct.Name"/></p>
+    <p>Description <input asp-for="oneProduct.Description"/></p>
+    <p>Price <input asp-for="oneProduct.Price"/></p>
+    <p><button>Create</button>></p>
+
+</form>
+
+<h1>Existing Products</h1>
+<ul>
+    @foreach (var item in Model.Products)
+    {
+        <li><a href="/products/@item.ProductId">@item.Name</a></li>
+    }
+</ul>

@@ -1,0 +1,14 @@
+@model Wrapper
+<h1>test</h1>
+
+<h3>@Model.oneProduct.Name</h3>
+<h3>@Model.oneProduct.ProductId</h3>
+<h3>@Model.oneProduct.Description</h3>
+<h3>@Model.oneProduct.Price</h3>
+
+<ul>
+    @foreach (var association in Model.oneProduct.Categories)
+    {
+        <li>@association.Category.Name</li>
+    }
+</ul>
