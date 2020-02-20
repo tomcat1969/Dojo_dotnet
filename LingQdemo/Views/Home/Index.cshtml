@@ -1,12 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model IEnumerable<Product>
+@model IEnumerable<string>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <ul>
-        @foreach(Product element in @Model){
-            <li>@element.Name  @element.Category  @element.Price</li>
+        @foreach(string element in Model){
+            <li>@element</li>
         }
             
         

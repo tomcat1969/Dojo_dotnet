@@ -27,10 +27,11 @@ namespace LingQdemo.Controllers
             };
             IEnumerable<Product> orderedProducts = myProducts.OrderByDescending(prod => prod.Price);
             IEnumerable<Product> justClothings = myProducts.Where(pro => pro.Category == "Clothing");
+            IEnumerable<string> justCategories = myProducts.Select(prod => prod.Category);
             
             Product justJeans = myProducts.FirstOrDefault(prod => prod.Name == "Jeans");
             ViewBag.p1 =  justJeans.Name;
-            return View(justClothings);
+            return View(justCategories);
         }
 
         public IActionResult Privacy()

@@ -1,0 +1,62 @@
+﻿<h1>Register to plan a wedding event!</h1>
+
+@model Wrapper
+<form asp-action="Register" asp-controller="Home" method="post">
+    <p>
+        <label asp-for="oneUser.FirstName"></label>
+        <input asp-for="oneUser.FirstName">
+        <span asp-validation-for="oneUser.FirstName"></span>
+    </p>
+
+    <p>
+        <label asp-for="oneUser.LastName"></label>
+        <input asp-for="oneUser.LastName">
+        <span asp-validation-for="oneUser.LastName"></span>
+    </p>
+
+    <p>
+        <label asp-for="oneUser.Email"></label>
+        <input asp-for="oneUser.Email">
+        <span asp-validation-for="oneUser.Email"></span>
+    </p>
+    <p>
+        <label asp-for="oneUser.Password"></label>
+        <input asp-for="oneUser.Password">
+        <span asp-validation-for="oneUser.Password"></span> 
+    </p>
+    
+    <p>
+        <label asp-for="oneUser.Confirm"></label>
+        <input asp-for="oneUser.Confirm">
+        <span asp-validation-for="oneUser.Confirm"></span>
+    </p>
+    <p><button>Register</button></p>
+
+    
+</form>
+
+<!---------------------------------------------------------------->
+<h1>Login !</h1>
+
+
+<form asp-action="DoLogin" asp-controller="Home" method="post">
+    
+
+    <p>
+        <label asp-for="oneLoginUser.Email"></label>
+        <input asp-for="oneLoginUser.Email" value="admin@gmail.com">
+        <span asp-validation-for="oneLoginUser.Email"></span>
+    </p>
+    <p>
+        <label asp-for="oneLoginUser.Password"></label>
+        <input asp-for="oneLoginUser.Password" value="1234567890">
+        <span asp-validation-for="oneLoginUser.Password"></span> 
+    </p>
+    
+   
+    <p><button>Login</button></p>
+
+    
+</form>
+<p>admin@gmail.com</p>
+<p>1234567890</p>

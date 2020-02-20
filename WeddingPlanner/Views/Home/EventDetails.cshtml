@@ -1,0 +1,15 @@
+@model Event
+<h1>@Model.WedderOne and @Model.WedderTwo 's Wedding</h1>
+ <a href="/success"> DashBoard    </a>
+ <a href="/logout">    Log Out</a>
+<h3>Date :  @Model.Date</h3>
+<h4>Guests :</h4>
+<ul>
+    @foreach (var a in Model.Associations)
+    {
+        <li>@a.User.FirstName  @a.User.LastName</li>
+    }
+</ul>
+
+
+<h4>Address : @Model.Address</h4>

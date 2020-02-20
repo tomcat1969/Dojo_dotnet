@@ -1,0 +1,39 @@
+@model List<Event>
+<h1>Login successfully!!!</h1>
+<h2>Hello, @ViewBag.FirstName</h2>
+<h3><a href="/logout">Log out</a></h3>
+
+
+
+<a href="/newEvent">New Wedding</a>
+
+<hr/>
+
+<table class="table">
+    <tr>
+        <th>Wedding</th>
+        <th>Date</th>
+        <th># of Guest</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><a href="/eventDetails/@item.EventId/@ViewBag.UserId">@item.WedderOne @item.WedderTwo</a></td>
+            <td>@item.Date</td>
+            <td>@item.Associations.Count</td>
+            <td>
+                @if(item.UserId == ViewBag.UserId)
+                {
+                    <a href="/DeleteEvent/@item.EventId">Delete</a>
+                }else if(item.Associations.Any(u => u.UserId == ViewBag.UserId))
+                {
+                    <a href="/DeleteAssociation/@item.EventId/@ViewBag.UserId">Un-RSVP</a>
+                }else{
+                     <a href="/AddAssociation/@item.EventId/@ViewBag.UserId">RSVP</a>
+                }
+            </td>
+        </tr>
+    }
+   
+</table>

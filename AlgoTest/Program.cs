@@ -8,37 +8,80 @@ namespace AlgoTest
         {
             Console.WriteLine("Hello World!");
 
-            TreeNode node10 = new TreeNode(10);
-            TreeNode node14 = new TreeNode(14);
-            TreeNode node12 = new TreeNode(12);
-            TreeNode node7 = new TreeNode(7);
-            TreeNode node9 = new TreeNode(9);
-            TreeNode node5 = new TreeNode(5);
-            TreeNode node6 = new TreeNode(6);
+        //     TreeNode node10 = new TreeNode(10);
+        //     TreeNode node14 = new TreeNode(14);
+        //     TreeNode node12 = new TreeNode(12);
+        //     TreeNode node7 = new TreeNode(7);
+        //     TreeNode node9 = new TreeNode(9);
+        //     TreeNode node5 = new TreeNode(5);
+        //     TreeNode node6 = new TreeNode(6);
 
-            node10.left = node5;
-            node10.right = node14;
-            node14.left = node12;
-            node5.right = node7;
-            node7.left = node6;
-            node7.right = node9;
+        //     node10.left = node5;
+        //     node10.right = node14;
+        //     node14.left = node12;
+        //     node5.right = node7;
+        //     node7.left = node6;
+        //     node7.right = node9;
 
-            preOrder(node10);
-            Console.WriteLine();
-           //AddNode(node10,4);
-            // Remove(node10,5);
+        //     preOrder(node10);
+        //     Console.WriteLine();
+        //    //AddNode(node10,4);
+        //     // Remove(node10,5);
 
-            Console.WriteLine("*******size is ****" + BSTsize(node10));
-             Console.WriteLine("*******size(v2) is ****" + BSTsize_v2(node10));
+        //     Console.WriteLine("*******size is ****" + BSTsize(node10));
+        //      Console.WriteLine("*******size(v2) is ****" + BSTsize_v2(node10));
 
-            Console.WriteLine("$$$$$$$$ the height is $$$$$$$ " + BSThight(node10));
+        //     Console.WriteLine("$$$$$$$$ the height is $$$$$$$ " + BSThight(node10));
 
-             //preOrder(node10);
+        //      //preOrder(node10);
+
+                Vertex v0 = new Vertex(0);
+                Vertex v1 = new Vertex(1);
+                Vertex v2 = new Vertex(2);
+                Vertex v3 = new Vertex(3);
+                Vertex v4 = new Vertex(4);
+
+                v0.neighbors.Add(v0);
+                v0.neighbors.Add(v1);
+                v0.neighbors.Add(v4);
+
+                v1.neighbors.Add(v1);
+                v1.neighbors.Add(v0);
+                v1.neighbors.Add(v4);
+                v1.neighbors.Add(v3);
+                v1.neighbors.Add(v2);
+
+                v2.neighbors.Add(v2);
+                v2.neighbors.Add(v1);
+                v2.neighbors.Add(v3);
+
+                v3.neighbors.Add(v3);
+                v3.neighbors.Add(v1);
+                v3.neighbors.Add(v4);
+                v3.neighbors.Add(v2);
+
+                v4.neighbors.Add(v4);
+                v4.neighbors.Add(v3);
+                v4.neighbors.Add(v0);
+                v4.neighbors.Add(v1);
 
 
 
 
 
+
+
+
+
+
+
+
+        }
+
+        private void AddEdge(Vertex v1,Vertex v2)
+        {
+            v1.neighbors.Add(v2);
+            v2.neighbors.Add(v1);
 
         }
 
