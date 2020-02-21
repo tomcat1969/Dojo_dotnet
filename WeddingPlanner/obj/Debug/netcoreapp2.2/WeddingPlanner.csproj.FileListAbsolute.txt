@@ -31,3 +31,4 @@
 /Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/WeddingPlanner/obj/Debug/netcoreapp2.2/Razor/Views/Home/Success.g.cshtml.cs
 /Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/WeddingPlanner/obj/Debug/netcoreapp2.2/Razor/Views/Home/NewEvent.g.cshtml.cs
 /Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/WeddingPlanner/obj/Debug/netcoreapp2.2/Razor/Views/Home/EventDetails.g.cshtml.cs
+/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/WeddingPlanner/obj/Debug/netcoreapp2.2/Razor/Views/Home/Test.g.cshtml.cs

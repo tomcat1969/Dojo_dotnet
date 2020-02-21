@@ -1,0 +1,32 @@
+
+@model DojoActivity
+<H1>Dojo Activity Center</H1>
+
+<a href="/success">Dashboard</a> |
+<a href="/logout" >Log Out</a>
+
+<h1>@Model.Title</h1>  
+ 
+<!-- <<a href="/AddAssociation/@Model.DojoActivityId/@ViewBag.UserId">Join</a>>-->
+ @if(Model.Creator.UserId == ViewBag.UserId)
+                {
+                    <a href="/DeleteDojoActivity/@Model.DojoActivityId"> Delete</a>
+                }else if(Model.Associations.Any(u => u.UserId == ViewBag.UserId))
+                {
+                    <a href="/DeleteAssociation/@Model.DojoActivityId/@ViewBag.UserId">Leave</a>
+                }else{
+                    <a href="/AddAssociation/@Model.DojoActivityId/@ViewBag.UserId">Join</a>
+                }
+ 
+<h3>Event Coordinator :  @Model.Creator.Name</h3>
+<h4>Description :</h4>
+<p>@Model.Description</p>
+<h4>Participants :</h4>
+<ul>
+    @foreach (var a in Model.Associations)
+    {
+        <li>@a.User.Name</li>
+    }
+</ul>
+
+

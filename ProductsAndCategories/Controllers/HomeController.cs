@@ -96,6 +96,7 @@ namespace ProductsAndCategories.Controllers
                                     .FirstOrDefault(p => p.CategoryId == categoryId);
             ViewBag.the_products_excluded = dbContext.Products
                                             .Include(p => p.Categories)
+                                            .ThenInclude(a => a.Product)
                                             .Where(a => a.Categories.All(p => p.CategoryId != categoryId))
                                             .ToList();                        
             return View("Index");

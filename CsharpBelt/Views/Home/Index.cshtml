@@ -1,0 +1,62 @@
+﻿<h1>Welcome to the Dojo Activity Center</h1>
+
+@model Wrapper
+<form asp-action="Register" asp-controller="Home" method="post">
+    <fieldset>
+        <legend>Register</legend>
+    
+        <p>
+            <label asp-for="oneUser.Name"></label>
+            <input asp-for="oneUser.Name">
+            <span asp-validation-for="oneUser.Name"></span>
+        </p>
+
+        <p>
+            <label asp-for="oneUser.Email"></label>
+            <input asp-for="oneUser.Email">
+            <span asp-validation-for="oneUser.Email"></span>
+        </p>
+        <p>
+            <label asp-for="oneUser.Password"></label>
+            <input asp-for="oneUser.Password">
+            <span asp-validation-for="oneUser.Password"></span> 
+            <ul><li>Passwor must be at least 8 characters</li></ul>
+        </p>
+        
+        <p>
+            <label asp-for="oneUser.Confirm"></label>
+            <input asp-for="oneUser.Confirm">
+            <span asp-validation-for="oneUser.Confirm"></span>
+        </p>
+        <p><button>Register</button></p>
+    </fieldset>    
+
+    
+</form>
+
+<!---------------------------------------------------------------->
+
+
+
+<form asp-action="DoLogin" asp-controller="Home" method="post">
+    
+    <fieldset>
+        <legend>Login</legend>
+        <p>
+            <label asp-for="oneLoginUser.Email"></label>
+            <input asp-for="oneLoginUser.Email" value="admin@gmail.com">
+            <span asp-validation-for="oneLoginUser.Email"></span>
+        </p>
+        <p>
+            <label asp-for="oneLoginUser.Password"></label>
+            <input asp-for="oneLoginUser.Password" value="1234567890">
+            <span asp-validation-for="oneLoginUser.Password"></span> 
+        </p>
+        
+    
+        <p><button>Login</button></p>
+    </fieldset>
+    
+</form>
+<p>admin@gmail.com</p>
+<p>1234567890</p>

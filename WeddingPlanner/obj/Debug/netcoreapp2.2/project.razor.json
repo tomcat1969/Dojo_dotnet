@@ -3001,6 +3001,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/WeddingPlanner/Views/Home/Test.cshtml",
+      "TargetPath": "Views/Home/Test.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/linhuang/Desktop/CodingDojo/c_sharp_stack/Dojo_dotnet/WeddingPlanner/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views/Shared/_Layout.cshtml",
       "FileKind": "mvc"
